@@ -22,28 +22,24 @@
                 <Menge>3</Menge>
                 <Produkt>Grippemittel "Tumifla"</Produkt>
                 <Preis>360.0</Preis>
-                <PosNummer>1</PosNummer>
                 <Mehrwertsteuer>19</Mehrwertsteuer>
             </Pos>
             <Pos PosNummer = "2">
                 <Menge></Menge>
                 <Produkt>Beratung pauschal</Produkt>
                 <Preis>50.0</Preis>
-                <PosNummer>2</PosNummer>
                 <Mehrwertsteuer>19</Mehrwertsteuer>
             </Pos>
             <Pos PosNummer = "3">
                 <Menge>2</Menge>
                 <Produkt>Abführmittel "Wech damit" pro Liter</Produkt>
                 <Preis>199.98</Preis>
-                <PosNummer>3</PosNummer>
                 <Mehrwertsteuer>19</Mehrwertsteuer>
             </Pos>
             <Pos PosNummer = "4">
                 <Menge>2</Menge>
                 <Produkt>Energieriegel "Sato"</Produkt>
                 <Preis>11.96</Preis>
-                <PosNummer>4</PosNummer>
                 <Mehrwertsteuer>7</Mehrwertsteuer>
             </Pos>
         </Positionen>

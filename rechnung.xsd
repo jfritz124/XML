@@ -19,7 +19,7 @@
                             <xs:element name="Kontakt">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="Sender">
+                                        <xs:element name="Empfaenger">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="Adresse">
@@ -40,7 +40,7 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="Empfaenger">
+                                        <xs:element name="Sender">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="Adresse">
