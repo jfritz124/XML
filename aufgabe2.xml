@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FRechnung PUBLIC "RECHNUNG 1.0" "rechnung.dtd">
+
+<FRechnung>
+    <Rechnung>
+        <Tag></Tag>
+        <Kontakt>
+            <Empfaenger>
+                <Adresse>
+                    <Anrede>Dr. med.</Anrede>
+                    <Name>Cyprian Zottel</Name>
+                    <Strasse>Soddelstrudel</Strasse>
+                    <Hausnummer>5a</Hausnummer>
+                    <PLZ>13023</PLZ>
+                    <Ort>Zotenheim</Ort>
+                </Adresse>
+            </Empfaenger>
+            <Sender></Sender>
+        </Kontakt>
+        <Positionen>
+            <Pos PosNummer = "1">
+                <Menge>3</Menge>
+                <Produkt>Grippemittel "Tumifla"</Produkt>
+                <Preis>360.0</Preis>
+                <PosNummer>1</PosNummer>
+                <Mehrwertsteuer>19</Mehrwertsteuer>
+            </Pos>
+            <Pos PosNummer = "2">
+                <Menge></Menge>
+                <Produkt>Beratung pauschal</Produkt>
+                <Preis>50.0</Preis>
+                <PosNummer>2</PosNummer>
+                <Mehrwertsteuer>19</Mehrwertsteuer>
+            </Pos>
+            <Pos PosNummer = "3">
+                <Menge>2</Menge>
+                <Produkt>Abführmittel "Wech damit" pro Liter</Produkt>
+                <Preis>199.98</Preis>
+                <PosNummer>3</PosNummer>
+                <Mehrwertsteuer>19</Mehrwertsteuer>
+            </Pos>
+            <Pos PosNummer = "4">
+                <Menge>2</Menge>
+                <Produkt>Energieriegel "Sato"</Produkt>
+                <Preis>11.96</Preis>
+                <PosNummer>4</PosNummer>
+                <Mehrwertsteuer>7</Mehrwertsteuer>
+            </Pos>
+        </Positionen>
+        <Betrag>
+            <Brutto>962.22</Brutto>
+            <Netto>490,22</Netto>
+            <Mwst>116,74</Mwst>
+        </Betrag>
+        <Footer>
+            <USTNummer>DE333666999</USTNummer>
+        </Footer>
+    </Rechnung>
+
+
+    <Rechnung>
+        <Tag>Kleintier Meier - Kleintierhandel</Tag>
+        <Kontakt>
+            <Empfaenger></Empfaenger>
+            <Sender>
+                <Adresse>
+                    <Name>Kleintier Meier GmbH</Name>
+                    <Strasse>Meierring</Strasse>
+                    <Hausnummer>3</Hausnummer>
+                    <PLZ>81828</PLZ>
+                    <Ort>Machthausen</Ort>
+                    <Tel>0777/987987</Tel>
+                    <Fax>0777/987789</Fax>
+                    <Mail>klein.meier@tiere.de</Mail>
+                </Adresse>
+            </Sender>
+        </Kontakt>
+        <RechnungsNummer>657321</RechnungsNummer>
+        <Steuernummer>88123/82822</Steuernummer>
+        <DatumAusstellung>2017-01-15</DatumAusstellung>
+        <Positionen></Positionen>
+        <Betrag>
+            <Brutto>962.22</Brutto>
+        </Betrag>
+        <Footer>
+        </Footer>
+    </Rechnung>
+</FRechnung>

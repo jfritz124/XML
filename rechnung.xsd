@@ -1,0 +1,130 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="MailPattern">
+        <xs:restriction base="xs:string">
+            <xs:length value="255"/>
+            <xs:pattern value=".+@[A-z0-9]+\.[A-z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="FRechnung">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Rechnung" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:normalizedString" name="Tag" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Kontakt">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Sender">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Adresse">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:normalizedString" name="Anrede" minOccurs="0"/>
+                                                                <xs:element type="xs:normalizedString" name="Name"/>
+                                                                <xs:element type="xs:normalizedString" name="Strasse"/>
+                                                                <xs:element type="xs:normalizedString" name="Hausnummer"/>
+                                                                <xs:element type="xs:int" name="PLZ"/>
+                                                                <xs:element type="xs:normalizedString" name="Ort"/>
+                                                                <xs:element type="xs:int" name="Tel" minOccurs="0"/>
+                                                                <xs:element type="xs:int" name="Fax" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="MailPattern" name="Mail" use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Empfaenger">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Adresse">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:normalizedString" name="Anrede" minOccurs="0"/>
+                                                                <xs:element type="xs:normalizedString" name="Name"/>
+                                                                <xs:element type="xs:normalizedString" name="Strasse"/>
+                                                                <xs:element type="xs:normalizedString" name="Hausnummer"/>
+                                                                <xs:element type="xs:int" name="PLZ"/>
+                                                                <xs:element type="xs:normalizedString" name="Ort"/>
+                                                                <xs:element type="xs:int" name="Tel" minOccurs="0"/>
+                                                                <xs:element type="xs:int" name="Fax" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="MailPattern" name="Mail" use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:normalizedString" name="Steuernummer"/>
+                            <xs:element type="xs:date" name="DatumAusstellung"/>
+                            <xs:element type="xs:normalizedString" name="RechnungsNummer"/>
+                            <xs:element name="Betrag">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:float" name="Brutto"/>
+                                        <xs:element type="xs:float" name="Netto"/>
+                                        <xs:element type="xs:float" name="Mwst"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Positionen">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Pos" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:int" name="Menge"/>
+                                                    <xs:element type="xs:normalizedString" name="Leistung"/>
+                                                    <xs:element type="xs:float" name="Preis"/>
+                                                    <xs:element type="xs:byte" name="Mehrwertsteuer"/>
+                                                </xs:sequence>
+                                                <xs:attribute type="xs:int" name="PosNummer" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Footer">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                     <xs:element type="xs:normalizedString" name="USTNummer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="KontoBank" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:normalizedString" name="BankName"/>
+                                                    <xs:element type="xs:int" name="KontoNummer" minOccurs="0"/>
+                                                    <xs:element type="xs:normalizedString" name="IBAN"/>
+                                                    <xs:element type="xs:normalizedString" name="BIC"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Bitcoin">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:normalizedString" name="BitAdresse"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
