@@ -15,7 +15,9 @@
                     <Ort>Zotenheim</Ort>
                 </Adresse>
             </Empfaenger>
-            <Sender></Sender>
+            <Sender>
+                <Adresse></Adresse>
+            </Sender>
         </Kontakt>
         <Positionen>
             <Pos PosNummer = "1">

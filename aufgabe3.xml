@@ -70,9 +70,9 @@
                 </Adresse>
             </Sender>
         </Kontakt>
-        <RechnungsNummer>657321</RechnungsNummer>
         <Steuernummer>88123/82822</Steuernummer>
         <DatumAusstellung>2017-01-15</DatumAusstellung>
+        <RechnungsNummer>657321</RechnungsNummer>
         <Positionen></Positionen>
         <Betrag>
             <Brutto>962.22</Brutto>

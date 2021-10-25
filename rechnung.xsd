@@ -51,7 +51,7 @@
                                                                 <xs:element type="xs:int" name="Tel" minOccurs="0"/>
                                                                 <xs:element type="xs:int" name="Fax" minOccurs="0"/>
                                                             </xs:sequence>
-                                                            <xs:attribute type="MailPattern" name="Mail"/>
+                                                            <xs:attribute type="MailPattern" name="Mail" use="required"/>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
@@ -60,15 +60,15 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element type="xs:normalizedString" name="Steuernummer"/>
+                            <xs:element type="xs:normalizedString" name="Steuernummer" minOccurs="0"/>
                             <xs:element type="xs:date" name="DatumAusstellung"/>
                             <xs:element type="xs:normalizedString" name="RechnungsNummer"/>
                             <xs:element name="Betrag">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element type="xs:float" name="Brutto"/>
-                                        <xs:element type="xs:float" name="Netto"/>
-                                        <xs:element type="xs:float" name="Mwst"/>
+                                        <xs:element type="xs:float" name="Netto" minOccurs="0"/>
+                                        <xs:element type="xs:float" name="Mwst" minOccurs="0"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
