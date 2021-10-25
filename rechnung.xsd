@@ -1,8 +1,8 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:simpleType name="MailPattern">
         <xs:restriction base="xs:string">
-            <xs:length value="255"/>
-            <xs:pattern value=".+@[A-z0-9]+\.[A-z]"/>
+            <xs:maxLength value="255"/>
+            <xs:pattern value=".+@[A-z0-9]+\.[A-z]+"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element name="FRechnung">
@@ -12,10 +12,6 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element type="xs:normalizedString" name="Tag" minOccurs="0"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                    <xs:complexType>
-                        <xs:sequence>
                             <xs:element name="Kontakt">
                                 <xs:complexType>
                                     <xs:sequence>
@@ -34,7 +30,7 @@
                                                                 <xs:element type="xs:int" name="Tel" minOccurs="0"/>
                                                                 <xs:element type="xs:int" name="Fax" minOccurs="0"/>
                                                             </xs:sequence>
-                                                            <xs:attribute type="MailPattern" name="Mail" use="required"/>
+                                                            <xs:attribute type="MailPattern" name="Mail"/>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
@@ -55,7 +51,7 @@
                                                                 <xs:element type="xs:int" name="Tel" minOccurs="0"/>
                                                                 <xs:element type="xs:int" name="Fax" minOccurs="0"/>
                                                             </xs:sequence>
-                                                            <xs:attribute type="MailPattern" name="Mail" use="required"/>
+                                                            <xs:attribute type="MailPattern" name="Mail"/>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
@@ -83,7 +79,7 @@
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element type="xs:int" name="Menge"/>
-                                                    <xs:element type="xs:normalizedString" name="Leistung"/>
+                                                    <xs:element type="xs:normalizedString" name="Produkt"/>
                                                     <xs:element type="xs:float" name="Preis"/>
                                                     <xs:element type="xs:byte" name="Mehrwertsteuer"/>
                                                 </xs:sequence>
@@ -96,11 +92,7 @@
                             <xs:element name="Footer">
                                 <xs:complexType>
                                     <xs:sequence>
-                                     <xs:element type="xs:normalizedString" name="USTNummer"/>
-                                    </xs:sequence>
-                                </xs:complexType>
-                                <xs:complexType>
-                                    <xs:sequence>
+                                        <xs:element type="xs:normalizedString" name="USTNummer"/>
                                         <xs:element name="KontoBank" maxOccurs="unbounded" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>

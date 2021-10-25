@@ -78,7 +78,6 @@
         <Betrag>
             <Brutto>962.22</Brutto>
         </Betrag>
-        <Footer>
-        </Footer>
+        <Footer></Footer>
     </Rechnung>
 </FRechnung>

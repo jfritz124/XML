@@ -1,10 +1,10 @@
 <!ELEMENT FRechnung (Rechnung+) >
-<!ELEMENT Rechnung (Tag, Kontakt, RechnungsNummer, Steuernummer, DatumAusstellung, Positionen, Betrag, Footer)>
+<!ELEMENT Rechnung (Tag?, Kontakt, RechnungsNummer, Steuernummer?, DatumAusstellung, Positionen?, Betrag, Footer?)>
 <!ELEMENT Tag (#PCDATA) >
 <!ELEMENT Kontakt (Empfaenger, Sender)>
 <!ELEMENT Sender (Adresse) >
 <!ELEMENT Empfaenger (Adresse) >
-<!ELEMENT Adresse (Anrede, Name, Strasse, Hausnummer, PLZ, Ort, Tel, Fax, Mail) >
+<!ELEMENT Adresse (Anrede?, Name, Strasse, Hausnummer, PLZ, Ort, Tel?, Fax?, Mail?) >
 <!ELEMENT Anrede (#PCDATA) >
 <!ELEMENT Name (#PCDATA) >
 <!ELEMENT Strasse (#PCDATA) >
@@ -18,20 +18,19 @@
 <!ELEMENT DatumAusstellung (#PCDATA) >
 <!ELEMENT RechnungsNummer (#PCDATA) >
 <!ELEMENT Positionen (Pos+) >
-<!ELEMENT Pos (Menge, Produkt, Preis, PosNummer, Mehrwertsteuer) >
+<!ELEMENT Pos (Menge?, Produkt, Preis, Mehrwertsteuer) >
 <!ATTLIST Pos PosNummer CDATA #REQUIRED>
 <!ELEMENT Produkt (#PCDATA) >
 <!ELEMENT Menge (#PCDATA) >
 <!ELEMENT Preis (#PCDATA) >
-<!ELEMENT PosNummer (#PCDATA) >
 <!ELEMENT Mehrwertsteuer (#PCDATA) >
-<!ELEMENT Betrag (Brutto, Netto, Mwst) >
+<!ELEMENT Betrag (Brutto, Netto?, Mwst?) >
 <!ELEMENT Brutto (#PCDATA) >
 <!ELEMENT Netto (#PCDATA) >
 <!ELEMENT Mwst (#PCDATA) >
-<!ELEMENT Footer (USTNummer, KontoBank, Bitcoin) >
+<!ELEMENT Footer (USTNummer, KontoBank, Bitcoin?) >
 <!ELEMENT USTNummer (#PCDATA) >
-<!ELEMENT KontoBank (BankName, KontoNummer, IBAN, BIC) >
+<!ELEMENT KontoBank (BankName, KontoNummer?, IBAN, BIC?) >
 <!ELEMENT BankName (#PCDATA) >
 <!ELEMENT KontoNummer (#PCDATA) >
 <!ELEMENT IBAN (#PCDATA) >

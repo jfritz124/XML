@@ -25,7 +25,7 @@
                 <Mehrwertsteuer>19</Mehrwertsteuer>
             </Pos>
             <Pos PosNummer = "2">
-                <Menge></Menge>
+                <Menge>2</Menge>
                 <Produkt>Beratung pauschal</Produkt>
                 <Preis>50.0</Preis>
                 <Mehrwertsteuer>19</Mehrwertsteuer>
@@ -45,8 +45,8 @@
         </Positionen>
         <Betrag>
             <Brutto>962.22</Brutto>
-            <Netto>490,22</Netto>
-            <Mwst>116,74</Mwst>
+            <Netto>490.22</Netto>
+            <Mwst>116.74</Mwst>
         </Betrag>
         <Footer>
             <USTNummer>DE333666999</USTNummer>
@@ -59,15 +59,14 @@
         <Kontakt>
             <Empfaenger></Empfaenger>
             <Sender>
-                <Adresse>
+                <Adresse Mail="unter@berg.de">
                     <Name>Kleintier Meier GmbH</Name>
                     <Strasse>Meierring</Strasse>
                     <Hausnummer>3</Hausnummer>
                     <PLZ>81828</PLZ>
                     <Ort>Machthausen</Ort>
-                    <Tel>0777/987987</Tel>
-                    <Fax>0777/987789</Fax>
-                    <Mail>klein.meier@tiere.de</Mail>
+                    <Tel>0777987987</Tel>
+                    <Fax>0777987789</Fax>
                 </Adresse>
             </Sender>
         </Kontakt>
@@ -84,17 +83,6 @@
 
     <Rechnung>
         <Kontakt>
-            <Sender>
-                <Adresse>
-                    <Name>Bestattung Unterberg</Name>
-                    <Strasse>Oberbergweg</Strasse>
-                    <Hausnummer>5</Hausnummer>
-                    <PLZ>43210</PLZ>
-                    <Ort>Ultursingen</Ort>
-                    <Tel>0478777555</Tel>
-                    <Mail>unter@berg.de</Mail>
-                </Adresse>
-            </Sender>
             <Empfaenger>
                 <Adresse>
                     <Anrede>Familie</Anrede>
@@ -105,6 +93,16 @@
                     <Ort>Ultursingen</Ort>
                 </Adresse>
             </Empfaenger>
+            <Sender>
+                <Adresse Mail="unter@berg.de">
+                    <Name>Bestattung Unterberg</Name>
+                    <Strasse>Oberbergweg</Strasse>
+                    <Hausnummer>5</Hausnummer>
+                    <PLZ>43210</PLZ>
+                    <Ort>Ultursingen</Ort>
+                    <Tel>0478777555</Tel>
+                </Adresse>
+            </Sender>
         </Kontakt>
         <Steuernummer>DE987654321</Steuernummer>
         <DatumAusstellung>2017-10-19</DatumAusstellung>
