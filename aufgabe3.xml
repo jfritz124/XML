@@ -77,8 +77,7 @@
         <Betrag>
             <Brutto>962.22</Brutto>
         </Betrag>
-        <Footer>
-        </Footer>
+        <Footer></Footer>
     </Rechnung>
 
     <Rechnung>
@@ -94,7 +93,8 @@
                 </Adresse>
             </Empfaenger>
             <Sender>
-                <Adresse Mail="unter@berg.de">
+                <Adresse Mail="u
+                nter@berg.de">
                     <Name>Bestattung Unterberg</Name>
                     <Strasse>Oberbergweg</Strasse>
                     <Hausnummer>5</Hausnummer>

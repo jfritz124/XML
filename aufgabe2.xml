@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE FRechnung PUBLIC "RECHNUNG 1.0" "rechnung.dtd">
+<!DOCTYPE FRechnung PUBLIC "rechnung 1.0" "rechnung.dtd">
 
 <FRechnung>
     <Rechnung>

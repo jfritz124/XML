@@ -28,7 +28,7 @@
 <!ELEMENT Brutto (#PCDATA) >
 <!ELEMENT Netto (#PCDATA) >
 <!ELEMENT Mwst (#PCDATA) >
-<!ELEMENT Footer (USTNummer, KontoBank, Bitcoin?) >
+<!ELEMENT Footer (USTNummer?, KontoBank, Bitcoin?) >
 <!ELEMENT USTNummer (#PCDATA) >
 <!ELEMENT KontoBank (BankName, KontoNummer?, IBAN, BIC?) >
 <!ELEMENT BankName (#PCDATA) >
