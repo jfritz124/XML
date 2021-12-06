@@ -1,0 +1,18 @@
+1.
+/FRechnung/Rechnung[3]/Zahlungsart/*[1]
+2.
+/FRechnung/Rechnung/Kontakt/Sender/Adresse[boolean(Tel)]/Name
+3.
+/FRechnung/Rechnung/Kontakt/Sender/Adresse[starts-with(PLZ/text(), '7')]
+4.
+/FRechnung/Rechnung/Positionen/Pos[100 > Preis div Menge]/Produkt
+5.
+/FRechnung/Rechnung/RechnungsNummer[count(../Positionen/Pos) > 3]
+6.
+/FRechnung/Rechnung[sum(Positionen/Pos/Preis) != Betrag/Brutto]
+7.
+/FRechnung/Rechnung[contains(Kontakt/Empfaenger/Adresse/Anrede, 'Herr') or contains(Kontakt/Empfaenger/Adresse/Anrede, 'Frau')]
+8.
+/FRechnung/Rechnung[Betrag/Brutto > 1000]
+9.
+/FRechnung/Rechnung[Betrag/Brutto > sum(/FRechnung/Rechnung/Betrag/Brutto) div count(/FRechnung/Rechnung)]

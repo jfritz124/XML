@@ -89,7 +89,7 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="Footer">
+                            <xs:element name="Zahlungsart">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element type="xs:normalizedString" name="USTNummer"/>
