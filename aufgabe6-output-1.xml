@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FRechnung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Rechnung>
+        <Empfaenger>
+            <Adresse>
+                <Name>Frau Sybille Sonder-Suttelrau</Name>
+                <Strasse>Am Süttelbach</Strasse>
+                <Hausnummer>17</Hausnummer>
+                <PLZ>DE-77070</PLZ>
+                <Ort>Siedelsuderstadt</Ort>
+            </Adresse>
+        </Empfaenger>
+        <Steuernummer>88123/82822</Steuernummer>
+        <DatumAusstellung>2017-01-15</DatumAusstellung>
+        <Brutto>962.22</Brutto>
+        <Positionen>
+            <Pos>
+                <PosNummer>1</PosNummer>
+                <Produkt>Antike Holzwürmer</Produkt>
+                <Preis>150.00</Preis>
+            </Pos>
+            <Pos>
+                <PosNummer>2</PosNummer>
+                <Produkt>Holzwurmfutter</Produkt>
+                <Preis>34.55</Preis>
+            </Pos>
+            <Pos>
+                <PosNummer>3</PosNummer>
+                <Produkt>Steinhaus, Petrophaga lorioti</Produkt>
+                <Preis>777.77</Preis>
+            </Pos>
+        </Positionen>
+    </Rechnung>
+    <Rechnung/>
+    <Rechnung>
+        <Empfaenger>
+            <Adresse>
+                <Name>Herr Claudius Artemis</Name>
+                <Strasse>Am Wolfsweiher</Strasse>
+                <Hausnummer>7</Hausnummer>
+                <PLZ>56741</PLZ>
+                <Ort>Hirschhausen</Ort>
+            </Adresse>
+        </Empfaenger>
+        <DatumAusstellung>2017-08-09</DatumAusstellung>
+        <Brutto>3598.99</Brutto>
+        <Positionen>
+            <Pos>
+                <PosNummer>1</PosNummer>
+                <Produkt>Bogelschnepper, um 1600</Produkt>
+                <Preis>3499.00</Preis>
+            </Pos>
+            <Pos>
+                <PosNummer>2</PosNummer>
+                <Produkt>Schusser, um 1720</Produkt>
+                <Preis>99.99</Preis>
+            </Pos>
+        </Positionen>
+    </Rechnung>
+    <Rechnung>
+        <Empfaenger>
+            <Adresse>
+                <Name>Herr Müller-Lüdenscheid</Name>
+                <Strasse>Badstrasse</Strasse>
+                <Hausnummer>3</Hausnummer>
+                <PLZ>DE-17777</PLZ>
+                <Ort>Dammhausen</Ort>
+            </Adresse>
+        </Empfaenger>
+        <DatumAusstellung>2016-12-31</DatumAusstellung>
+        <Brutto>19.99</Brutto>
+        <Positionen>
+            <Pos>
+                <PosNummer>1</PosNummer>
+                <Produkt>Gummiente Quitsch</Produkt>
+                <Preis>19.99</Preis>
+            </Pos>
+        </Positionen>
+    </Rechnung>
+</FRechnung>

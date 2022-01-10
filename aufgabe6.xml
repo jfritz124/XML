@@ -7,15 +7,22 @@
         <Kontakt>
             <Empfaenger>
                 <Adresse>
-                    <Anrede>Dr. med.</Anrede>
-                    <Name>Cyprian Zottel</Name>
+                    <Name>Dr. med. Cyprian Zottel</Name>
                     <Strasse>Soddelstrudel</Strasse>
                     <Hausnummer>5a</Hausnummer>
                     <PLZ>13023</PLZ>
                     <Ort>Zotenheim</Ort>
                 </Adresse>
             </Empfaenger>
-            <Sender></Sender>
+            <Sender>
+                <Adresse Mail="">
+                    <Name>Rochade-La Hoff Pharma GmbH</Name>
+                    <Strasse>An der Chemie</Strasse>
+                    <Hausnummer>17</Hausnummer>
+                    <PLZ>DE-79639</PLZ>
+                    <Ort>Grenzych-Wahlen</Ort>
+                </Adresse>
+            </Sender>
         </Kontakt>
         <RechnungsNummer>15124124</RechnungsNummer>
         <Positionen>
@@ -56,9 +63,17 @@
 
 
     <Rechnung>
-        <Tag>Kleintier Meier - Kleintierhandel</Tag>
+            <Tag>Kleintier Meier - Kleintierhandel</Tag>
         <Kontakt>
-            <Empfaenger></Empfaenger>
+            <Empfaenger>
+                <Adresse>
+                    <Name>Frau Sybille Sonder-Suttelrau</Name>
+                    <Strasse>Am Süttelbach</Strasse>
+                    <Hausnummer>17</Hausnummer>
+                    <PLZ>DE-77070</PLZ>
+                    <Ort>Siedelsuderstadt</Ort>
+                </Adresse>
+            </Empfaenger>
             <Sender>
                 <Adresse Mail="unter@berg.de">
                     <Name>Kleintier Meier GmbH</Name>
@@ -74,7 +89,21 @@
         <Steuernummer>88123/82822</Steuernummer>
         <DatumAusstellung>2017-01-15</DatumAusstellung>
         <RechnungsNummer>657321</RechnungsNummer>
-        <Positionen></Positionen>
+        <Positionen>
+            <Pos PosNummer="1">
+                <Produkt>Antike Holzwürmer</Produkt>
+                <Preis>150.00</Preis>
+            </Pos>
+            <Pos PosNummer="2">
+                <Menge></Menge>
+                <Produkt>Holzwurmfutter</Produkt>
+                <Preis>34.55</Preis>
+            </Pos>
+            <Pos PosNummer="3">
+                <Produkt>Steinhaus, Petrophaga lorioti</Produkt>
+                <Preis>777.77</Preis>
+            </Pos>
+        </Positionen>
         <Betrag>
             <Brutto>962.22</Brutto>
         </Betrag>
@@ -85,8 +114,7 @@
         <Kontakt>
             <Empfaenger>
                 <Adresse>
-                    <Anrede>Familie</Anrede>
-                    <Name>Urmel</Name>
+                    <Name>Familie Urmel</Name>
                     <Strasse>Ulturenstrasse</Strasse>
                     <Hausnummer>764</Hausnummer>
                     <PLZ>43210</PLZ>
@@ -161,8 +189,7 @@
         <Kontakt>
             <Empfaenger>
                 <Adresse>
-                    <Anrede>Herr</Anrede>
-                    <Name>Claudius Artemis</Name>
+                    <Name>Herr Claudius Artemis</Name>
                     <Strasse>Am Wolfsweiher</Strasse>
                     <Hausnummer>7</Hausnummer>
                     <PLZ>56741</PLZ>
@@ -171,8 +198,7 @@
             </Empfaenger>
             <Sender>
                 <Adresse Mail="">
-                    <Anrede>Herr</Anrede>
-                    <Name>Peer Weidemann</Name>
+                    <Name>Herr Peer Weidemann</Name>
                     <Strasse>Kürschnergasse</Strasse>
                     <Hausnummer>77</Hausnummer>
                     <PLZ>76131</PLZ>
@@ -202,5 +228,39 @@
             </Pos>
         </Positionen>
         <Zahlungsart></Zahlungsart>
+    </Rechnung>
+    <Rechnung>
+        <Kontakt>
+            <Empfaenger>
+                <Adresse>
+                    <Name>Herr Müller-Lüdenscheid</Name>
+                    <Strasse>Badstrasse</Strasse>
+                    <Hausnummer>3</Hausnummer>
+                    <PLZ>DE-17777</PLZ>
+                    <Ort>Dammhausen</Ort>
+                </Adresse>
+            </Empfaenger>
+            <Sender>
+                <Adresse Mail="">
+                    <Name>Dr. Klöpner Sanitätseinrichtungen</Name>
+                    <Strasse>Zur Wasserkuppe</Strasse>
+                    <Hausnummer>99</Hausnummer>
+                    <PLZ>DE-43354</PLZ>
+                    <Ort>Bischhofsborn</Ort>
+                </Adresse>
+            </Sender>
+        </Kontakt>
+        <DatumAusstellung>2016-12-31</DatumAusstellung>
+        <RechnungsNummer>4711</RechnungsNummer>
+        <Betrag>
+            <Brutto>19.99</Brutto>
+        </Betrag>
+        <Positionen>
+            <Pos PosNummer="1">
+                <Menge>1</Menge>
+                <Produkt>Gummiente Quitsch</Produkt>
+                <Preis>19.99</Preis>
+            </Pos>
+        </Positionen>
     </Rechnung>
 </FRechnung>

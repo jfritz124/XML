@@ -5,7 +5,7 @@
     <xsl:template match="/">
 
         1. Die erste Zahlungsart der dritten Rechnung.
-        <xsl:value-of select="FRechnung/Rechnung[3]/Zahlungsart/*[1]"/>
+        <xsl:value-of select="FRechnung/Rechnung[3]/Zahlungsart/*[2]"/>
         2. Der Namenstext aus allen Adressen, die eine Telefonnummer enthalten.
         <xsl:for-each select="FRechnung/Rechnung">
             <xsl:value-of select="Kontakt/Sender/Adresse[boolean(Tel)]/Name"/>
